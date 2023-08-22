@@ -1,7 +1,7 @@
+import "reflect-metadata";
 import { provide } from "inversify-binding-decorators";
 import TYPES from "../csv.types";
 import { IReadCsvRepository } from "./interface/read.csv.repository.interface";
-import { inject } from "inversify";
 
 @provide(TYPES.READ_CSV_REPOSITORY)
 export class ReadCsvRepository implements IReadCsvRepository {

@@ -1,0 +1,1 @@
+{"version":3,"file":"route.connection.js","sourceRoot":"","sources":["../../../src/looders/route.connection.ts"],"names":[],"mappings":";;;;;;AAEA,sFAA0D;AAM1D,MAAa,eAAe;IAExB,YACI,SAAmB;QAEnB,IAAI,CAAC,SAAS,GAAG,SAAS,CAAA;IAC9B,CAAC;IAED,SAAS;QACL,MAAM,CAAC,GAAG,IAAI,CAAC,SAAS,CAAC,GAAG,CAAqB,mBAAK,CAAC,mBAAmB,CAAC,CAAC;IAChF,CAAC;CACJ;AAXD,0CAWC"}

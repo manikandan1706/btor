@@ -8,9 +8,8 @@ import { ServerConnection } from "./src/looders/server.connection";
 import { mainContainer } from "./src/looders/container/loader.container";
 import { Loaders } from "./src/looders/index.loader";
 
-
-let container:any = new Container();
-container.load(buildProviderModule());
+// let container:any = new Container();
+// container.load(buildProviderModule());
 
 mainContainer.resolve(Loaders);
 serverContainer.resolve(ServerConnection);

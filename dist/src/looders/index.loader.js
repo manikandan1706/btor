@@ -16,23 +16,22 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Loaders = void 0;
-var inversify_1 = require("inversify");
-var database_connection_1 = require("./database.connection");
-var types_loaders_1 = __importDefault(require("./types/types.loaders"));
-var Loaders = /** @class */ (function () {
-    function Loaders(database) {
+const inversify_1 = require("inversify");
+const database_connection_1 = require("./database.connection");
+const types_loaders_1 = __importDefault(require("./types/types.loaders"));
+let Loaders = class Loaders {
+    constructor(database) {
         this.database = database;
         this.loadDataBase();
     }
-    Loaders.prototype.loadDataBase = function () {
+    loadDataBase() {
         return this.database.connect();
-    };
-    Loaders = __decorate([
-        (0, inversify_1.injectable)(),
-        __param(0, (0, inversify_1.inject)(types_loaders_1.default.DATABASE_CONNECT)),
-        __metadata("design:paramtypes", [database_connection_1.DatabaseConnction])
-    ], Loaders);
-    return Loaders;
-}());
+    }
+};
+Loaders = __decorate([
+    (0, inversify_1.injectable)(),
+    __param(0, (0, inversify_1.inject)(types_loaders_1.default.DATABASE_CONNECT)),
+    __metadata("design:paramtypes", [database_connection_1.DatabaseConnction])
+], Loaders);
 exports.Loaders = Loaders;
 //# sourceMappingURL=index.loader.js.map

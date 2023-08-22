@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var TYPES = {
+const TYPES = {
     READ_CSV_CONTROLLER: Symbol.for("readCsvController"),
     WRITE_CSV_CONTROLLER: Symbol.for("writeCsvController"),
     READ_CSV_SERVICE: Symbol.for("readCsvService"),
